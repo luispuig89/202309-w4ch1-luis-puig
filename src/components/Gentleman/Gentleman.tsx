@@ -10,7 +10,7 @@ export function Gentleman({ gentlemen }: Props) {
 
   const handleClick = (item: GentlemanInfo) => {
     item.selected = !item.selected;
-    console.log(item.selected);
+    console.log(item.selected, selected);
     setSelect(item.selected);
   };
 
