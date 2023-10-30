@@ -6,12 +6,12 @@ type Props = {
 };
 
 export function Gentleman({ gentlemen }: Props) {
-  const [selected, useSelected] = useState();
+  const [selected, setSelect] = useState(Boolean);
 
   const handleClick = (item: GentlemanInfo) => {
     item.selected = !item.selected;
-    console.log(item.selected);
-    useSelected(item.selected);
+    console.log(item.selected, selected);
+    setSelect(item.selected);
   };
 
   return (
